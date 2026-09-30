@@ -2,7 +2,7 @@
 <html lang="ko"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>SOXL 규칙 대시보드</title><style>
+<title>SOXL 퀀트 프로젝트</title><style>
 :root{color-scheme:light;--bg:#f6f7f9;--panel:#fff;--text:#1b1f24;--muted:#667085;--line:#e4e7ec;--accent:#2f6fde;
 --ok-bg:#e3f5ea;--ok:#146c3a;--bad-bg:#fde8e8;--bad:#b42318;--wait-bg:#fff4dc;--wait:#8a5a00;--info-bg:#e6efff;--info:#1d4ed8;
 --better:#1d4ed8;--worse:#c81e1e}
@@ -41,46 +41,38 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--accent)}
 @media (max-width:480px){.cards,.grid2{grid-template-columns:1fr}section{padding:14px}}
 </style></head>
 <body><main>
-<h1>SOXL 규칙 대시보드</h1>
+<h1>SOXL 퀀트 프로젝트</h1>
 <div class="status">
-  <span>생성 <b>2026-09-30 09:42</b></span>
+  <span>생성 <b>2026-09-30 09:49</b></span>
   <span>가격 데이터 최신 <b>2026-09-28 종가 $142.29</b></span>
-  <span>주문표 기록 <b>1일 · 4장</b></span>
-  <span>모의 계좌 일치 <b>4/4</b></span>
+  <span>주문표 <b>1일차</b></span>
+  
 </div>
 <section><h2>1. 계좌 모니터링</h2>
 <h3 class="sub">최신 주문표 · 대상일 2026-09-29</h3>
 <div class="cards">
 <article class="card">
-  <header class="card-h"><h3>안정</h3>
-    <div>계좌 <span class="badge ok">일치</span> 주문 <span class="badge ok">일치</span></div></header>
-  <div class="tw"><table class="compact"><thead><tr><th>항목</th><th>지향점</th><th>모의 계좌</th></tr></thead><tbody><tr><td>기준일 종가</td><td>2026-09-28 $142.29</td><td>2026-09-28 $142.29</td></tr><tr><td>현금</td><td>$1,000,000</td><td>$1,000,000</td></tr><tr><td>보유</td><td>0주</td><td>0주</td></tr><tr><td>평단</td><td>-</td><td>-</td></tr></tbody></table></div>
-  <div class="tw"><table class="compact"><thead><tr><th>사유</th><th>지향점</th><th>모의 계좌</th><th>일치</th><th>체결</th></tr></thead><tbody><tr><td>1티어</td><td>84주<br><span class="muted">$141.18</span></td><td>84주<br><span class="muted">$141.18</span></td><td><span class="badge ok">일치</span></td><td><span class="badge wait">대기</span></td></tr><tr><td>2티어</td><td>171주<br><span class="muted">$138.43</span></td><td>171주<br><span class="muted">$138.43</span></td><td><span class="badge ok">일치</span></td><td><span class="badge wait">대기</span></td></tr><tr><td>3티어</td><td>350주<br><span class="muted">$135.68</span></td><td>350주<br><span class="muted">$135.68</span></td><td><span class="badge ok">일치</span></td><td><span class="badge wait">대기</span></td></tr></tbody></table></div>
+  <header class="card-h"><h3>안정</h3></header>
+  <div class="tw"><table class="compact"><thead><tr><th>항목</th><th>값</th></tr></thead><tbody><tr><td>기준일 종가</td><td>2026-09-28 $142.29</td></tr><tr><td>현금</td><td>$1,000,000</td></tr><tr><td>보유</td><td>0주</td></tr><tr><td>평단</td><td>-</td></tr></tbody></table></div><div class="tw"><table class="compact"><thead><tr><th>사유</th><th>수량</th><th>단가</th><th>체결</th></tr></thead><tbody><tr><td>1티어</td><td>84주</td><td>$141.18</td><td><span class="badge wait">대기</span></td></tr><tr><td>2티어</td><td>171주</td><td>$138.43</td><td><span class="badge wait">대기</span></td></tr><tr><td>3티어</td><td>350주</td><td>$135.68</td><td><span class="badge wait">대기</span></td></tr></tbody></table></div>
   <p class="muted small">대상일 종가 대기 중</p>
 </article>
 <article class="card">
-  <header class="card-h"><h3>중립</h3>
-    <div>계좌 <span class="badge ok">일치</span> 주문 <span class="badge ok">일치</span></div></header>
-  <div class="tw"><table class="compact"><thead><tr><th>항목</th><th>지향점</th><th>모의 계좌</th></tr></thead><tbody><tr><td>기준일 종가</td><td>2026-09-28 $142.29</td><td>2026-09-28 $142.29</td></tr><tr><td>현금</td><td>$1,000,000</td><td>$1,000,000</td></tr><tr><td>보유</td><td>0주</td><td>0주</td></tr><tr><td>평단</td><td>-</td><td>-</td></tr></tbody></table></div>
-  <div class="tw"><table class="compact"><thead><tr><th>사유</th><th>지향점</th><th>모의 계좌</th><th>일치</th><th>체결</th></tr></thead><tbody><tr><td>1티어</td><td>131주<br><span class="muted">$141.18</span></td><td>131주<br><span class="muted">$141.18</span></td><td><span class="badge ok">일치</span></td><td><span class="badge wait">대기</span></td></tr><tr><td>2티어</td><td>268주<br><span class="muted">$138.43</span></td><td>268주<br><span class="muted">$138.43</span></td><td><span class="badge ok">일치</span></td><td><span class="badge wait">대기</span></td></tr><tr><td>3티어</td><td>547주<br><span class="muted">$135.68</span></td><td>547주<br><span class="muted">$135.68</span></td><td><span class="badge ok">일치</span></td><td><span class="badge wait">대기</span></td></tr></tbody></table></div>
+  <header class="card-h"><h3>중립</h3></header>
+  <div class="tw"><table class="compact"><thead><tr><th>항목</th><th>값</th></tr></thead><tbody><tr><td>기준일 종가</td><td>2026-09-28 $142.29</td></tr><tr><td>현금</td><td>$1,000,000</td></tr><tr><td>보유</td><td>0주</td></tr><tr><td>평단</td><td>-</td></tr></tbody></table></div><div class="tw"><table class="compact"><thead><tr><th>사유</th><th>수량</th><th>단가</th><th>체결</th></tr></thead><tbody><tr><td>1티어</td><td>131주</td><td>$141.18</td><td><span class="badge wait">대기</span></td></tr><tr><td>2티어</td><td>268주</td><td>$138.43</td><td><span class="badge wait">대기</span></td></tr><tr><td>3티어</td><td>547주</td><td>$135.68</td><td><span class="badge wait">대기</span></td></tr></tbody></table></div>
   <p class="muted small">대상일 종가 대기 중</p>
 </article>
 <article class="card">
-  <header class="card-h"><h3>위험</h3>
-    <div>계좌 <span class="badge ok">일치</span> 주문 <span class="badge ok">일치</span></div></header>
-  <div class="tw"><table class="compact"><thead><tr><th>항목</th><th>지향점</th><th>모의 계좌</th></tr></thead><tbody><tr><td>기준일 종가</td><td>2026-09-28 $142.29</td><td>2026-09-28 $142.29</td></tr><tr><td>현금</td><td>$1,000,000</td><td>$1,000,000</td></tr><tr><td>보유</td><td>0주</td><td>0주</td></tr><tr><td>평단</td><td>-</td><td>-</td></tr></tbody></table></div>
-  <div class="tw"><table class="compact"><thead><tr><th>사유</th><th>지향점</th><th>모의 계좌</th><th>일치</th><th>체결</th></tr></thead><tbody><tr><td>1티어</td><td>131주<br><span class="muted">$141.18</span></td><td>131주<br><span class="muted">$141.18</span></td><td><span class="badge ok">일치</span></td><td><span class="badge wait">대기</span></td></tr><tr><td>2티어</td><td>268주<br><span class="muted">$138.43</span></td><td>268주<br><span class="muted">$138.43</span></td><td><span class="badge ok">일치</span></td><td><span class="badge wait">대기</span></td></tr><tr><td>3티어</td><td>547주<br><span class="muted">$135.68</span></td><td>547주<br><span class="muted">$135.68</span></td><td><span class="badge ok">일치</span></td><td><span class="badge wait">대기</span></td></tr></tbody></table></div>
+  <header class="card-h"><h3>위험</h3></header>
+  <div class="tw"><table class="compact"><thead><tr><th>항목</th><th>값</th></tr></thead><tbody><tr><td>기준일 종가</td><td>2026-09-28 $142.29</td></tr><tr><td>현금</td><td>$1,000,000</td></tr><tr><td>보유</td><td>0주</td></tr><tr><td>평단</td><td>-</td></tr></tbody></table></div><div class="tw"><table class="compact"><thead><tr><th>사유</th><th>수량</th><th>단가</th><th>체결</th></tr></thead><tbody><tr><td>1티어</td><td>131주</td><td>$141.18</td><td><span class="badge wait">대기</span></td></tr><tr><td>2티어</td><td>268주</td><td>$138.43</td><td><span class="badge wait">대기</span></td></tr><tr><td>3티어</td><td>547주</td><td>$135.68</td><td><span class="badge wait">대기</span></td></tr></tbody></table></div>
   <p class="muted small">대상일 종가 대기 중</p>
 </article>
 <article class="card">
-  <header class="card-h"><h3>고위험</h3>
-    <div>계좌 <span class="badge ok">일치</span> 주문 <span class="badge ok">일치</span></div></header>
-  <div class="tw"><table class="compact"><thead><tr><th>항목</th><th>지향점</th><th>모의 계좌</th></tr></thead><tbody><tr><td>기준일 종가</td><td>2026-09-28 $142.29</td><td>2026-09-28 $142.29</td></tr><tr><td>현금</td><td>$1,000,000</td><td>$1,000,000</td></tr><tr><td>보유</td><td>0주</td><td>0주</td></tr><tr><td>평단</td><td>-</td><td>-</td></tr></tbody></table></div>
-  <div class="tw"><table class="compact"><thead><tr><th>사유</th><th>지향점</th><th>모의 계좌</th><th>일치</th><th>체결</th></tr></thead><tbody><tr><td>1티어</td><td>171주<br><span class="muted">$141.18</span></td><td>171주<br><span class="muted">$141.18</span></td><td><span class="badge ok">일치</span></td><td><span class="badge wait">대기</span></td></tr><tr><td>2티어</td><td>348주<br><span class="muted">$138.43</span></td><td>348주<br><span class="muted">$138.43</span></td><td><span class="badge ok">일치</span></td><td><span class="badge wait">대기</span></td></tr><tr><td>3티어</td><td>711주<br><span class="muted">$135.68</span></td><td>711주<br><span class="muted">$135.68</span></td><td><span class="badge ok">일치</span></td><td><span class="badge wait">대기</span></td></tr></tbody></table></div>
+  <header class="card-h"><h3>고위험</h3></header>
+  <div class="tw"><table class="compact"><thead><tr><th>항목</th><th>값</th></tr></thead><tbody><tr><td>기준일 종가</td><td>2026-09-28 $142.29</td></tr><tr><td>현금</td><td>$1,000,000</td></tr><tr><td>보유</td><td>0주</td></tr><tr><td>평단</td><td>-</td></tr></tbody></table></div><div class="tw"><table class="compact"><thead><tr><th>사유</th><th>수량</th><th>단가</th><th>체결</th></tr></thead><tbody><tr><td>1티어</td><td>171주</td><td>$141.18</td><td><span class="badge wait">대기</span></td></tr><tr><td>2티어</td><td>348주</td><td>$138.43</td><td><span class="badge wait">대기</span></td></tr><tr><td>3티어</td><td>711주</td><td>$135.68</td><td><span class="badge wait">대기</span></td></tr></tbody></table></div>
   <p class="muted small">대상일 종가 대기 중</p>
 </article></div>
 <details open><summary>전체 기록 (4건)</summary>
-<div class="tw"><table class=""><thead><tr><th>대상일</th><th>전략</th><th>현금 지향점 / 모의</th><th>보유 지향점 / 모의</th><th>계좌</th><th>주문</th><th>체결</th><th>일차</th></tr></thead><tbody><tr><td>2026-09-29</td><td>안정</td><td>$1,000,000 / $1,000,000</td><td>0 / 0</td><td><span class="badge ok">일치</span></td><td><span class="badge ok">일치</span> <span class="muted">3/3</span></td><td>대기</td><td>1일차</td></tr><tr><td>2026-09-29</td><td>중립</td><td>$1,000,000 / $1,000,000</td><td>0 / 0</td><td><span class="badge ok">일치</span></td><td><span class="badge ok">일치</span> <span class="muted">3/3</span></td><td>대기</td><td>1일차</td></tr><tr><td>2026-09-29</td><td>위험</td><td>$1,000,000 / $1,000,000</td><td>0 / 0</td><td><span class="badge ok">일치</span></td><td><span class="badge ok">일치</span> <span class="muted">3/3</span></td><td>대기</td><td>1일차</td></tr><tr><td>2026-09-29</td><td>고위험</td><td>$1,000,000 / $1,000,000</td><td>0 / 0</td><td><span class="badge ok">일치</span></td><td><span class="badge ok">일치</span> <span class="muted">3/3</span></td><td>대기</td><td>1일차</td></tr></tbody></table></div>
+<div class="tw"><table class=""><thead><tr><th>대상일</th><th>전략</th><th>현금</th><th>보유</th><th>주문</th><th>체결</th><th>일차</th></tr></thead><tbody><tr><td>2026-09-29</td><td>안정</td><td>$1,000,000</td><td>0주</td><td>3건</td><td>대기</td><td>1일차</td></tr><tr><td>2026-09-29</td><td>중립</td><td>$1,000,000</td><td>0주</td><td>3건</td><td>대기</td><td>1일차</td></tr><tr><td>2026-09-29</td><td>위험</td><td>$1,000,000</td><td>0주</td><td>3건</td><td>대기</td><td>1일차</td></tr><tr><td>2026-09-29</td><td>고위험</td><td>$1,000,000</td><td>0주</td><td>3건</td><td>대기</td><td>1일차</td></tr></tbody></table></div>
 </details></section>
 <section><h2>2. 성과 비교 (우리 백테스트 vs 지향점)</h2>
 <p class="muted">기간 2010-04-01 ~ 2026-08-31, 원금 $100,000, 수수료 편도 0.07%.
